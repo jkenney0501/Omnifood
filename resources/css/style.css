@@ -44,9 +44,57 @@ h1 {
     font-size:240%; /*relative to parent(html=40px)*/
     /*decrease font weight with big headlines*/
     font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
 }
 
+
 /*Button designs*/
+/*common styles of both buttons go in btn*/
+/*create states: link,visited, active (click), hover(mouse over)*/
+.btn:link,
+.btn:visited {
+    border-radius: 200px;
+    display: inline-block; /*set width and height on element */
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none; /*eliminate unerline*/
+    transition: background-color 0.2s, border 0.2s, color 0.2s;/*smoother transition when hovered*/
+}
+
+
+/*makes buttons look the same after clicked, no visit status*/
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22; /* flatuicolors.com*/
+    border: 1px solid #e67e22; /*adding this makes btn-full same w/h as bth ghost*/
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+/*creates a darker color when hovered*/
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e67e22; 
+}
+
+/*makes solid bg when hovered and changes text to white*/
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
