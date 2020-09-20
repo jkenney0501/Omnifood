@@ -1,0 +1,52 @@
+/* font-family: 'Lato', sans-serif; */
+
+/*sets the base parameters of the elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'sans-serif', 'Arial';
+    font-size: 20px; /*all children font size elem will be defined from this, ie 200% etc*/
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /*centers*/
+}
+
+/*set hero image background*/
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/resources/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/*center hero text box-main image*/
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%; /* top and left position the bg image*/
+    left: 50%;
+    transform: translate(-50%, -50%); /*moves h1 to the left center of bgi*/
+}
+
+h1 {
+    margin:0;
+    color: #fff;
+    font-size:240%; /*relative to parent(html=40px)*/
+    /*decrease font weight with big headlines*/
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+/*Button designs*/
