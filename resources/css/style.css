@@ -100,7 +100,9 @@ h3 {
     margin-left: 15%; /*bc width was reduced, we need to center*/
 }
 
-
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
 
 /*navbar and logo on nav*/
 .logo {
@@ -206,3 +208,41 @@ h3 {
 }
 
 /*--------end header---------*/
+
+
+
+/*-------- Meals Section ------- */
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none; /*get rid of bullets*/
+    width: 100%; /*make w all across page*/
+}
+
+.meals-showcase li {
+    display: block; /*inline display*/
+    float: left; /*make elements side by side*/
+    width: 25%; /*4 elements inside of 100%*/
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden; /*keeps image in container by hiding the overflow*/
+    background-color: black;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15); /*zooms in on img when its not hovered*/
+    transition: transform 0.5s, opacity 0.5s; /*animates-slows down the hover effect*/
+}
+
+.meal-photo img:hover{
+    opacity: 1; /*opacity returns to normal on hover*/
+    transform: scale(1.03); /*transfroms img back to normal on hover*/
+}
