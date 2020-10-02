@@ -1,0 +1,41 @@
+
+/*---------Responsive queries----------*/
+
+/*big tablet to 1200px */
+@media only screen and (max-width:1200px){
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%
+  }
+
+  .row {
+    padding:0 2%;
+  }
+}
+
+/*small tab to big tablet 768-1023px*/
+@media only screen and (max-width:1023px){
+  body {
+    font-size: 18px;
+  }
+
+  section {
+    padding:60px 0;
+  }
+
+  .long-copy {
+    width: 80%; 
+    margin-left: 10%;
+}
+}
+
+/*small phone to tablet screens 481-767px*/
+@media only screen and (max-width:767px){
+
+}
+
+
+/*styles go inside declaration block-small screens 0-480px*/
+@media only screen and (max-width:480px){
+
+}
