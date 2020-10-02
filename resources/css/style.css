@@ -12,13 +12,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'sans-serif', 'Arial';
     font-size: 20px; /*all children font size elem will be defined from this, ie 200% etc*/
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .row {
@@ -468,24 +470,25 @@ cite img {
 
 /*----------------Contact Form Section ----------------*/
 .contact-form {
-    width: 60%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 50px auto;
+    
 }
 
 input[type=text],
 input[type=email],
 select,
 textarea {
-    width: 65%;
+    width: 75%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
 
-label {
+/* label {
     margin-left: 175px;
     
-}
+} */
 
 
 textarea {
