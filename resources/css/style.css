@@ -648,7 +648,8 @@ footer p {
 	display:none;
 	width:100%;
 	margin:0 auto;
-	position:fixed;
+    position:fixed;
+    z-index: 9999;
 	bottom:20px;
     right:10px;	
 }
@@ -663,8 +664,6 @@ footer p {
 	text-align: center;
 	margin: 0 0 0 0;
     cursor:pointer;
-    z-index: 999;
-    position: absolute;
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;

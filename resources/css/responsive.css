@@ -180,10 +180,11 @@ label {margin-left:150px;}
   
 
   .footer-nav{
-    margin-left: 35px;
+   display:none;
   }
   .social-links{
-    margin-right: 90px;
+    text-align: center;
+    margin-right: 55px;
   }
 
 }
