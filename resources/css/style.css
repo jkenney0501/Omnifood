@@ -51,9 +51,14 @@ section {
 /*set hero image background*/
 header {
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/resources/images/hero.jpg);
-    background-attachment: fixed; /*image stays inplace on scroll*/
-    background-size: cover;
+    background-attachment: scroll; /*image stays inplace on scroll*/
+    /* background-size: cover; */
     background-position: center;
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:100% 100%; 
+    background-repeat:no-repeat;
     height: 100vh;
 }
 

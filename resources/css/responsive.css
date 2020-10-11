@@ -174,9 +174,12 @@ label {margin-left:150px;}
 
   .works-step:last-of-type{margin-bottom: 60px;} */
 
-  .contact-form{width:100%}
+  .contact-form{
+    width:100%;
+    margin:0;
+  }
 
-  label {margin-left:0px;}
+  label {margin:0px;}
   
 
   .footer-nav{
