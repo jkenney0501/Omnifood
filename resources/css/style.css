@@ -166,35 +166,35 @@ h3 {
     border-bottom: 2px solid #e67e22;
 }
 
-/*============= Sticky navi===========*/
+/*=============mobile nav button==========*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+/* Sticky navi */
 .sticky {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background-color: rgba(255,255,255,.98);
-    box-shadow: 0 2px 1px #efefef ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
-
-.sticky .main-nav {
-    margin-top: 18px;
-}
-
-
+.sticky .main-nav { margin-top: 18px; }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
-    padding: 22px 0; /*add space top/bot from line and text*/
+    padding: 16px 0;
     color: #555;
 }
-
-.sticky .logo {
-    display:none;
-}
-
-.sticky .logo-black {
-    display:block;
-}
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /*features boxes, can be used elsewhere*/
 .box {
@@ -641,4 +641,51 @@ footer p {
 .js--wp-2.animated,
 .js--wp-3.animated {
     opacity:1;
+}
+
+/*======scroll top top button=====*/
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+    right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+    bottom:20px;
+    border-radius: 3px;
+    background:#e67e22;
+    color:white;
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+    cursor:pointer;
+    z-index: 999;
+    position: absolute;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:#cf6d17;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
 }

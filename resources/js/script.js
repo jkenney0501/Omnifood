@@ -1,15 +1,7 @@
 
 $(document).ready(function() {
 //sticky navigation--line 160 on style.css, add class
-    $('.js--section-features').waypoint(function(direction) {
-      if (direction == "down") {
-        $('nav').addClass('sticky');
-      } else {
-          $('nav').removeClass('sticky');
-      }
-    },{
-      offset: '60px;'
-    });
+    
 
    //scroll on buttons
    $('.js--scroll-to-plans').click(function () {
@@ -43,7 +35,20 @@ $(document).ready(function() {
       $('.js--wp-4').addClass('animate__animated animate__pulse');
     },{
       offset: '50%'
-    });
-
+    });  
 });
     
+//mobile responsive nav js
+$('.js--nav-icon').click(function() {
+  var nav = $('.js--main-nav');
+ 
+ nav.slideToggle(200);
+  var icon = $('.js--nav-icon i');
+  if (icon.hasClass('ion-navicon-round')) {
+      icon.addClass('ion-close-round');
+      icon.removeClass('ion-navicon-round');
+  } else {
+      icon.addClass('ion-navicon-round');
+      icon.removeClass('ion-close-round');
+  }
+});
