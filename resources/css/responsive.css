@@ -11,7 +11,7 @@
   .row {padding:0 2%;}
 }
 
-label {margin-left:150px;}
+
 
 /*======================small tab to big tablet 768-1023px==============================*/
 @media only screen and (max-width:1023px){
@@ -48,8 +48,6 @@ label {margin-left:150px;}
   .plan-price{font-size:250%;}
 
   .contact-form{width:80%}
-
-  label {margin-left:40px;}
 
   .footer-nav{font-size: 80%;}
 }
@@ -145,8 +143,6 @@ label {margin-left:150px;}
 
   .btn-app{margin-left: 15px;}
 
-  label {margin-left:0px;}
-
   .footer-nav{
     margin-left: 35px;
   }
@@ -178,9 +174,6 @@ label {margin-left:150px;}
     width:100%;
     margin:0;
   }
-
-  label {margin:0px;}
-  
 
   .footer-nav{
    display:none;
